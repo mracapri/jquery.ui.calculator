@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.js"></script>
+	<script type="text/javascript" src="http://fstoke.me/jquery/codeview/js/jquery/codeview/jquery.codeview.js"></script> 
+	<script type='text/javascript' src='https://github.com/mracapri/valledelbit/raw/master/jquery/jvalledelbit-calculator-1.0.0-SNAPSHOT.js'></script>
+	<link rel="stylesheet" href="http://jqueryui.com/themes/base/jquery.ui.all.css" type="text/css"/> 
+	<link type="text/css" href="http://fstoke.me/jquery/codeview/js/jquery/codeview/css/jquery.codeview.css" rel="stylesheet" /> 		
+	<title>jvalledelbit-calculator Sample</title>
+	<script type="text/javascript">
+		$().ready(function(){
+			<!-- Begin Calculator -->
+			$('div#calculator').calculator(
+				function(data){
+					alert(data);
+				}
+			);
+			<!-- End Calculator -->
+			
+			$(".javascript_block").codeview();
+		});
+	</script>
+</head>
+
+<body>
+	<div id="container">
+	Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. 
+	</div>
+	
+	<pre class="javascript_block"> 
+	$('div#calculator').calculator(
+		function(data){
+			alert(data);
+		}
+	);
+	</pre> 
+	
+	<!-- These is for plugin -->
+	<div id='calculator'/>
+</body>
+
+</html>

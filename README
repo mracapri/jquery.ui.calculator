@@ -1,0 +1,14 @@
+NOTE:
+
+This plugin show a basic calculator on html page.
+Please, look next code:
+
+MINI TUTORIAL:
+
+$().ready(function(){
+	$('div#calculator').calculator(
+		function(data){
+			alert(data);
+		}
+	);
+});
